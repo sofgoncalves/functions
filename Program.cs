@@ -23,9 +23,21 @@ namespace functions
         }
         static void InsertionSort(int[] arrayToSort)
         {
-            for (int i = 0; i < arrayToSort.Length-1; i++){
+            for (int i = 0; i < arrayToSort.Length-1; i++)
+            {
                 int itemToSort = arrayToSort[i+1];
-                
+                for (int j = i; j >= 0; j--)
+                {
+                    if (j > 0 && itemToSort >= arrayToSort[j - 1])
+                    {
+                        arrayToSort[j] = itemToSort;
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine();
+                    }
+                }
             }
         }
     }
