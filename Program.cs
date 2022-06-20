@@ -12,7 +12,7 @@ namespace functions
         }
         static void BubbleSort(int[] arrayToSort)
         {
-            Console.WriteLine();
+            for(int pass = 1; pass)
         }
         static void PrintList(int[]list)
         {
